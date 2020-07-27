@@ -13,6 +13,11 @@ body {
   background-color: #eee;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 
 /* ============================== Mobile Design =========================== */
 
@@ -114,6 +119,9 @@ header {
   border-left: 1px solid #eee;
 }
 
+/* ************************** Title section ***************************** */
+
+
 .titles {
   display: grid;
   grid-template-columns: 1fr;
@@ -123,16 +131,43 @@ header {
 }
 
 .title1 {
-  background-color: red;
+  background-color: black;
+  
 }
 
 .title2 {
-  background-color: blue;
+  background: rgba(0,0,0,.25);
 }
 
 .title3 {
   background-color: green;
 }
+
+.lower-left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  color: #fff;
+}
+
+.lower-left h2 {
+ font-size: 1em;
+ margin: 0;
+}
+
+.lower-left h1 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.lower-left p {
+  font-size: 0.7em;
+  margin: 0;
+}
+
+
 
 /* ============================== First Break Point =========================== */
 
@@ -154,9 +189,15 @@ header {
   }
 
   .title1 {
-    background-color: red;
     grid-area: 1 / 1 / 3 / 2;
   }
+   
+   .lower-left h1 {
+     font-size: 1.4em;
+   }
+   .title1 .lower-left h1 {
+    font-size: 2.5em;
+   }
 }
 
 
@@ -166,10 +207,17 @@ header {
   .header-logo {
     display: none;
   }
+
   .black-white {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
+  }
+
+  .title1 {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
