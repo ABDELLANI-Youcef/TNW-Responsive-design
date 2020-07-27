@@ -202,7 +202,25 @@ header {
   display: none;
 }
 
+/* ************************** Latest news section ***************************** */
 
+.section-heading {
+  color: red;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+
+.latest-news {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.latest-news-div {
+  background-color: blueviolet;
+}
 
 
 
@@ -241,6 +259,12 @@ header {
    .title1 .lower-left h1 {
     font-size: 2.5em;
   }
+
+  .latest-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
 }
 
 
@@ -275,5 +299,11 @@ header {
   .title-logo-div p {
     float: right;
     font-size: 1em;
+  }
+
+  .latest-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
   }
 }
