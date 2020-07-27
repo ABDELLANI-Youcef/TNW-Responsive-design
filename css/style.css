@@ -198,6 +198,12 @@ header {
   margin: 0;
 }
 
+.title-logo-div {
+  display: none;
+}
+
+
+
 
 
 /* ============================== First Break Point =========================== */
@@ -256,5 +262,18 @@ header {
     background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .title-logo-div {
+    display: block;
+    margin-bottom: auto;
+  }
+  .title-logo-div img {
+    width: 50%;
+  }
+  
+  .title-logo-div p {
+    float: right;
+    font-size: 1em;
   }
 }
