@@ -18,14 +18,33 @@ body {
 
 header {
   width: 100%;
-  color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-logo {
+  width: 106px;
+  height: 80px;
+  background-color: white;
+}
+
+.black-white {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: calc(100% - 106px);
 }
 
 .black-header {
   background-color: black;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
+  color: grey;
+  margin-bottom: 0;
+  font-size: 13px;
+  padding-left: 0;
+  height: 33px;
 }
 
 .black-header-left {
@@ -33,9 +52,66 @@ header {
   justify-content: space-around;
 }
 
+.black-header-left ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.black-header-left ul li, .black-header-right ul li{
+  margin-right: 10px;
+}
+
+.black-header-left-new {
+  color: white;
+}
+
 .black-header-right {
   display: flex;
   justify-content: space-around;
+  margin-right: 20px;
+}
+
+.black-header-right ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.white-header {
+  display: flex;
+  background-color: white;
+  margin-top: 0;
+  font-size: 15px;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.white-header-left {
+  visibility: hidden;
+  height: 100%;
+}
+
+.white-header-left ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.white-header-left ul li{
+  margin-right: 10px;
+}
+
+.white-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+.search-container {
+  height: 100%;
+  width: 48px;
+  border-left: 1px solid #eee;
 }
 
 .titles {
@@ -61,6 +137,18 @@ header {
 /* ============================== First Break Point =========================== */
 
 @media screen and (min-width: 768px) {
+  .black-header {
+    display: flex;
+  }
+  
+  .white-header-left {
+    visibility: visible;
+  }
+
+  .header-logo {
+    display: inline;
+  }
+
   .titles {
     grid-template: 1fr 1fr / 2fr 1fr
   }
@@ -75,5 +163,13 @@ header {
 /* ============================== Second Break Point =========================== */
 
 @media screen and (min-width: 1024px) {
-  
+  .header-logo {
+    display: none;
+  }
+  .black-white {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
 }
