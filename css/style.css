@@ -1,0 +1,33 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #eee;
+}
+
+header {
+  width: 100%;
+  color: white;
+}
+
+.black-header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.black-header-left {
+  display: flex;
+  justify-content: space-around;
+}
+
+.black-header-right {
+  display: flex;
+  justify-content: space-around;
+}
