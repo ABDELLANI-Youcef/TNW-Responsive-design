@@ -29,8 +29,16 @@ header {
 
 .header-logo {
   width: 106px;
-  height: 80px;
-  background-color: white;
+  height: 48px;
+  background-image: linear-gradient(-45deg , rgb(206, 87, 18) 20% , purple 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo img {
+  height: 40%;
+  width: 70%;
 }
 
 .black-white {
@@ -45,7 +53,7 @@ header {
   display: none;
   justify-content: space-between;
   align-items: center;
-  color: grey;
+  color: #ddd;
   margin-bottom: 0;
   font-size: 13px;
   padding-left: 0;
@@ -60,33 +68,40 @@ header {
 .black-header-left ul {
   display: flex;
   list-style-type: none;
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
 .black-header-left ul li, .black-header-right ul li{
-  margin-right: 10px;
+  margin-right: 7px;
 }
 
 .black-header-left-new {
   color: white;
+  font-size: 15px;
+}
+
+.black-header-left-last {
+  margin-right: 0;
 }
 
 .black-header-right {
   display: flex;
   justify-content: space-around;
-  margin-right: 20px;
+  margin-right: 18px;
 }
 
 .black-header-right ul {
   display: flex;
   list-style-type: none;
+  padding-left: 0;
 }
 
 .white-header {
   display: flex;
   background-color: white;
+  color: #aaa;
   margin-top: 0;
-  font-size: 15px;
+  font-size: 12px;
   justify-content: space-between;
   align-items: center;
   height: 48px;
@@ -95,16 +110,19 @@ header {
 .white-header-left {
   visibility: hidden;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .white-header-left ul {
   display: flex;
   list-style-type: none;
+  align-items: center;
   padding-left: 20px;
 }
 
 .white-header-left ul li{
-  margin-right: 10px;
+  margin-right: 7px;
 }
 
 .white-header-right {
@@ -114,9 +132,22 @@ header {
   height: 100%;
 }
 .search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 48px;
   border-left: 1px solid #eee;
+}
+
+.reorder-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 48px;
+  border-left: 1px solid #eee;
+  color: coral;
 }
 
 /* ************************** Title section ***************************** */
@@ -179,9 +210,15 @@ header {
   .white-header-left {
     visibility: visible;
   }
-
+  
   .header-logo {
-    display: inline;
+    width: 106px;
+    height: 80px;
+    background-color : yellowgreen;
+  }
+
+  .reorder-container {
+    display: none;
   }
 
   .titles {
@@ -197,7 +234,7 @@ header {
    }
    .title1 .lower-left h1 {
     font-size: 2.5em;
-   }
+  }
 }
 
 
