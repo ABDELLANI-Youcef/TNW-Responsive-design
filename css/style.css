@@ -432,6 +432,23 @@ header {
   margin-left: -1em;
 }
 
+/* *********************************** Latest deals ******************************* */
+
+.latest-deals-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: var(--side-margin);
+}
+
+.deals-header-right {
+  color: #f42;
+  font-size: 16px;
+}
+
+.deals-header-right:hover {
+  color: black;
+}
 
 /* ============================== First Break Point =========================== */
 
