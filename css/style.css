@@ -375,6 +375,64 @@ header {
   color: #aaa;
 }
 
+/* ************************** Articles section ***************************** */
+
+.articles-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  margin: 50px var(--side-margin) 0 var(--side-margin);
+}
+
+.article-header .section-heading {
+  margin-left: 0;
+}
+
+.article-picture {
+  height: 70vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.picture1 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-512x270.jpg");
+}
+
+.article-middle {
+  background-color: rgb(231, 218, 216);
+  overflow: hidden;
+  padding-left: 20px;
+  color: red;
+}
+
+.article-middle img {
+  width: 150px;
+  height: 130px;
+  float: right;
+  margin-top: 3px;
+}
+
+.article-bottom div {
+  border-bottom: 1px #aaa solid;
+}
+
+.article-bottom ul {
+  padding-left: 20px;
+  list-style: none;
+  color: #777;
+}
+
+.article-bottom li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+
 /* ============================== First Break Point =========================== */
 
 @media screen and (min-width: 768px) {
@@ -449,6 +507,16 @@ header {
     border-left: 1px solid #f42;
     border-right: 1px solid #f42;
   }
+
+  .articles-section {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .article-picture {
+    height: 40vw;
+    padding: 20px;
+  }
 }
 
 
@@ -518,5 +586,15 @@ header {
 
   .funding-last {
     display: block;
+  }
+
+  .articles-section {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .article-picture {
+    height: 25vw;
+    padding: 20px;
   }
 }
