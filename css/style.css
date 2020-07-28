@@ -1,5 +1,8 @@
 /* ============================== General Styles =========================== */
 
+:root {
+  --side-margin: 18px;
+}
 
 * {
   -moz-box-sizing: border-box;
@@ -205,24 +208,51 @@ header {
 /* ************************** Latest news section ***************************** */
 
 .section-heading {
-  color: red;
+  color: #f42;
   font-weight: 700;
   font-size: 1.5em;
-  margin-left: 10px;
+  margin-left: var(--side-margin);
+}
+
+.section-heading:hover {
+  color: black;
 }
 
 .latest-news {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
-  padding: 10px;
+  margin-left: var(--side-margin);
+  margin-right: var(--side-margin);
 }
 
 .latest-news-div {
   background-color: blueviolet;
 }
 
+/* ************************** Latest funding section ***************************** */
 
+.latest-funding-header {
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--side-margin);
+  margin-right: var(--side-margin);
+}
+
+.latest-funding-header .section-heading {
+  margin-left: 0;
+}
+
+.latest-funding-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-funding-options a {
+  color: #f42;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
 
 /* ============================== First Break Point =========================== */
 
@@ -265,6 +295,25 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
   }
+  
+  .latest-funding-options {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .latest-funding-options a {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  .funding-option-center {
+    padding-left:  12px;
+    padding-right: 12px;
+    margin-left:   12px;
+    margin-right:  12px;
+    border-left: 1px solid #f42;
+    border-right: 1px solid #f42;
+  }
 }
 
 
@@ -305,5 +354,30 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
+  }
+
+  .latest-funding-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .latest-funding-options {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .funding-option-center {
+    padding-left:  12px;
+    padding-right: 12px;
+    margin-left:   12px;
+    margin-right:  12px;
+    border-left: 1px solid #f42;
+    border-right: 1px solid #f42;
+  }
+
+  .latest-funding-options a {
+    margin-bottom: 0;
   }
 }
