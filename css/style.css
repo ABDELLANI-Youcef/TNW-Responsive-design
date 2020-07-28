@@ -308,29 +308,73 @@ header {
 
 .funding-div {
   background-color: rgb(231, 218, 216);
+  padding-bottom: 10px;
 }
 
 .funding-div-head {
   background-color: rgb(241, 190, 182);
+  position: relative;
+  padding-bottom: 7px;
 }
 
 .funding-div-title {
-  background-color: coral;
+  background-color: #f42;
   color: white;
   padding-left: 85px;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .funding-enterprise-logo {
   width: 60px;
   height: 60px;
-  position: relative;
-  left: 15px;
-  top: -10px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.funding-budget {
+  margin-left: 85px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.funding-type {
+  margin-left: 85px;
+  margin-top: 0;
+  color: #555;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .funding-last {
   display: none;
 }
+
+.funding-info {
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 200;
+  color: #555;
+}
+
+.funding-info .fa {
+  color: black;
+  font-size: 15px;
+  margin-right: 6px;
+}
+
+.funding-div hr {
+  border-top: 1px solid rgb(241, 190, 182);;
+  border-bottom: none;
+}
+
+.funding-platform {
+  color: #aaa;
+}
+
 /* ============================== First Break Point =========================== */
 
 @media screen and (min-width: 768px) {
@@ -473,6 +517,6 @@ header {
   }
 
   .funding-last {
-    display: inherit;
+    display: block;
   }
 }
