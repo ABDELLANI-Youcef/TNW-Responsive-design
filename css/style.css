@@ -218,6 +218,13 @@ header {
   color: black;
 }
 
+.section-heading img{
+  width: 20px;
+  height: 20px;
+  margin-bottom: -3.8px;
+}
+
+
 .latest-news {
   display: grid;
   grid-template-columns: 1fr;
@@ -227,7 +234,52 @@ header {
 }
 
 .latest-news-div {
-  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest-news-image {
+  width: 75px;
+  height: 75px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.latest-news-text {
+  width: calc(100% - 85px);
+  font-size: 0.8em;
+}
+
+.latest-news-div1 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/kodak-480x270.jpg");
+}
+
+.latest-news-div2 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/CES-2021-516x270.jpg");
+}
+
+.latest-news-div3 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/tencent-480x270.jpg");
+}
+
+.latest-news-div4 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/acquisition-blog-post-thisstartupannouncementdoesntexist-519x270.png");
+}
+
+.latest-news-div5 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/woman-drinking-coffee-while-working-with-laptop-4050289-540x270.jpg");
+}
+
+.latest-news-div6 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-512x270.jpg");
+}
+
+.latest-news-div7 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/1-9-516x270.jpg");
+}
+
+.latest-news-div8 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/header-image-photoshops-ipad-app-refine-edge-rotate-canvas-516x270.png");
 }
 
 /* ************************** Latest funding section ***************************** */
@@ -294,6 +346,20 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
+  }
+
+  .latest-news-div {
+    flex-direction: column;
+  }
+  
+  .latest-news-image {
+    width: 100%;
+    height: 15vw;
+  }
+  
+  .latest-news-text {
+    width: 100%;
+    font-size: 1em;
   }
   
   .latest-funding-options {
