@@ -306,6 +306,31 @@ header {
   font-size: 12px;
 }
 
+.funding-div {
+  background-color: rgb(231, 218, 216);
+}
+
+.funding-div-head {
+  background-color: rgb(241, 190, 182);
+}
+
+.funding-div-title {
+  background-color: coral;
+  color: white;
+  padding-left: 85px;
+}
+
+.funding-enterprise-logo {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: 15px;
+  top: -10px;
+}
+
+.funding-last {
+  display: none;
+}
 /* ============================== First Break Point =========================== */
 
 @media screen and (min-width: 768px) {
@@ -445,5 +470,9 @@ header {
 
   .latest-funding-options a {
     margin-bottom: 0;
+  }
+
+  .funding-last {
+    display: inherit;
   }
 }
