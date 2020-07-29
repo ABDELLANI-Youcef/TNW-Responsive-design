@@ -450,6 +450,77 @@ header {
   color: black;
 }
 
+/* *********************************** Latest deals ******************************* */
+
+.footer {
+  color: #aaa;
+  margin-top: 50px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  background-color: #131313;
+  padding-top: 40px;
+  margin-bottom: 0;
+}
+
+.footer-links i {
+  margin: 0 10px 0 10px;
+  font-size: 1.2em;
+  border: 1px #333 solid;
+  padding: 10px;
+  background-color:#333;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.footer-links i:hover {
+  background-color:#000;
+}
+
+.footer-links h3 {
+  margin: 0 5px 0 5px;
+  font-size: 0.7em;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.copyright p {
+  margin: 2px 5px 0 2px;
+  font-size: 0.8em;
+}
+
+.copyright img {
+  width: 40px;
+  height: 15px;
+  margin-bottom: -3px;
+}
+
+.copyright span {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+.wheelchair {
+  color: #fff;
+  position: fixed;
+  background-color: #146ff8;
+  padding: 4px 5px 4px 7px;
+  font-size: 1.5em;
+  right: 0;
+  bottom: 0;
+}
+
 /* ============================== First Break Point =========================== */
 
 @media screen and (min-width: 768px) {
@@ -534,6 +605,11 @@ header {
     height: 40vw;
     padding: 20px;
   }
+
+  .copyright {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 
@@ -613,5 +689,13 @@ header {
   .article-picture {
     height: 25vw;
     padding: 20px;
+  }
+
+  .wheelchair {
+    border-radius: 50%;
+    padding: 4px 5px 4px 10px;
+    font-size: 2em;
+    right: 1vw;
+    bottom: 1vw;
   }
 }
