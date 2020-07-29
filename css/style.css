@@ -14,6 +14,7 @@ body {
   margin: 0;
   width: 100%;
   background-color: #eee;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
 }
 
 a {
@@ -174,16 +175,30 @@ header {
 }
 
 .title1 {
-  background-color: black;
-  
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Untitled-design-2020-07-29T185605.585-796x417.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+
 .title2 {
-  background: rgba(0,0,0,.25);
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Untitled-design-2020-07-28T191306.193-796x417.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title3 {
-  background-color: green;
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Untitled-design-2020-07-29T160841.851-796x417.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title2 a {
+  background-image: linear-gradient(to top,rgba(0,0,0, 1), rgba(255, 255, 255, 0.1));
+}
+
+.title3 a {
+  background-image: linear-gradient(to top,rgba(0,0,0, 1), rgba(255, 255, 255, 0.1));
 }
 
 .lower-left {
@@ -196,11 +211,17 @@ header {
 }
 
 .lower-left h2 {
- font-size: 1em;
- margin: 0;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
 }
 
 .lower-left h1 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.lower-left h3 {
   font-size: 1.2em;
   margin: 0;
 }
@@ -414,6 +435,30 @@ header {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-512x270.jpg");
 }
 
+.picture2 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/header-image-photoshops-ipad-app-refine-edge-rotate-canvas-516x270.png");
+}
+
+.picture3 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/1-9-516x270.jpg");
+}
+
+.picture6 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/woman-drinking-coffee-while-working-with-laptop-4050289-540x270.jpg");
+}
+
+.picture7 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/kodak-480x270.jpg");
+}
+
+.picture8 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/CES-2021-516x270.jpg");
+}
+
+.picture9 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/acquisition-blog-post-thisstartupannouncementdoesntexist-519x270.png");
+}
+
 .article-middle {
   background-color: rgb(231, 218, 216);
   overflow: hidden;
@@ -506,7 +551,7 @@ header {
   display: flex;
   justify-content: center;
   background-color: #131313;
-  padding-top: 40px;
+  padding-top: 30px;
   margin-bottom: 0;
 }
 
@@ -525,7 +570,7 @@ header {
 }
 
 .footer-links h3 {
-  margin: 0 5px 0 5px;
+  margin: 0 5px 20px 5px;
   font-size: 0.7em;
 }
 
@@ -682,10 +727,8 @@ header {
     padding-left: 0;
   }
 
-  .title1 {
-    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  .title1 a {
+    background-image: linear-gradient(to top,rgba(0,0,0, 1), rgb(221, 66, 66, .5), rgb(221, 66, 66, .25));
   }
 
   .title-logo-div {
