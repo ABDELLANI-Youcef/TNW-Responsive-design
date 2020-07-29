@@ -22,7 +22,6 @@ a {
   color: black;
 }
 
-
 /* ============================== Mobile Design =========================== */
 
 header {
@@ -34,7 +33,7 @@ header {
 .header-logo {
   width: 114px;
   height: 48px;
-  background-image: linear-gradient(-45deg , rgb(206, 87, 18) 20% , purple 80%);
+  background-image: linear-gradient(-45deg, rgb(206, 87, 18) 20%, purple 80%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +44,7 @@ header {
 
 .space-holder {
   margin-top: 0;
-  height: 2 px;
+  height: 2px;
 }
 
 .header-logo img {
@@ -64,7 +63,6 @@ header {
   color: #ddd;
   margin-bottom: 0;
   font-size: 13px;
-  padding-left: 0;
   height: 33px;
   padding-left: 105px;
   width: 100%;
@@ -81,7 +79,8 @@ header {
   padding-left: 18px;
 }
 
-.black-header-left ul li, .black-header-right ul li{
+.black-header-left ul li,
+.black-header-right ul li {
   margin-right: 7px;
 }
 
@@ -134,7 +133,7 @@ header {
   padding-left: 20px;
 }
 
-.white-header-left ul li{
+.white-header-left ul li {
   margin-right: 7px;
 }
 
@@ -144,6 +143,7 @@ header {
   justify-content: flex-end;
   height: 100%;
 }
+
 .search-container {
   display: flex;
   justify-content: center;
@@ -165,7 +165,6 @@ header {
 
 /* ************************** Title section ***************************** */
 
-
 .titles {
   display: grid;
   grid-template-columns: 1fr;
@@ -180,7 +179,6 @@ header {
   background-size: cover;
 }
 
-
 .title2 {
   background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Untitled-design-2020-07-28T191306.193-796x417.png");
   background-repeat: no-repeat;
@@ -194,11 +192,11 @@ header {
 }
 
 .title2 a {
-  background-image: linear-gradient(to top,rgba(0,0,0, 1), rgba(255, 255, 255, 0.1));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1));
 }
 
 .title3 a {
-  background-image: linear-gradient(to top,rgba(0,0,0, 1), rgba(255, 255, 255, 0.1));
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1));
 }
 
 .lower-left {
@@ -248,12 +246,11 @@ header {
   color: black;
 }
 
-.section-heading img{
+.section-heading img {
   width: 20px;
   height: 20px;
   margin-bottom: -3.8px;
 }
-
 
 .latest-news {
   display: grid;
@@ -403,7 +400,7 @@ header {
 }
 
 .funding-div hr {
-  border-top: 1px solid rgb(241, 190, 182);;
+  border-top: 1px solid rgb(241, 190, 182);
   border-bottom: none;
 }
 
@@ -487,7 +484,7 @@ header {
   content: "\2022";
   color: red;
   font-weight: bold;
-  display: inline-block; 
+  display: inline-block;
   width: 1em;
   margin-left: -1em;
 }
@@ -519,7 +516,7 @@ header {
   top: 0;
   position: absolute;
   display: none;
-} 
+}
 
 .discount {
   font-size: 12px;
@@ -560,13 +557,13 @@ header {
   font-size: 1.2em;
   border: 1px #333 solid;
   padding: 10px;
-  background-color:#333;
+  background-color: #333;
   border-radius: 50%;
   color: #fff;
 }
 
 .footer-links i:hover {
-  background-color:#000;
+  background-color: #000;
 }
 
 .footer-links h3 {
@@ -611,23 +608,21 @@ header {
   bottom: 0;
 }
 
-
-
 /* ============================== First Break Point =========================== */
 
 @media screen and (min-width: 768px) {
   .black-header {
     display: flex;
   }
-  
+
   .white-header-left {
     visibility: visible;
   }
-  
+
   .header-logo {
     width: 106px;
     height: 82px;
-    background-color : yellowgreen;
+    background-color: yellowgreen;
     margin-top: -32px;
   }
 
@@ -636,17 +631,18 @@ header {
   }
 
   .titles {
-    grid-template: 1fr 1fr / 2fr 1fr
+    grid-template: 1fr 1fr / 2fr 1fr;
   }
 
   .title1 {
     grid-area: 1 / 1 / 3 / 2;
   }
-   
-   .lower-left h1 {
-     font-size: 1.4em;
-   }
-   .title1 .lower-left h1 {
+
+  .lower-left h1 {
+    font-size: 1.4em;
+  }
+
+  .title1 .lower-left h1 {
     font-size: 2.5em;
   }
 
@@ -660,18 +656,17 @@ header {
     flex-direction: column;
     justify-content: flex-start;
   }
-  
+
   .latest-news-image {
     width: 100%;
     height: 15vw;
   }
-  
+
   .latest-news-text {
     width: 100%;
   }
-  
-  .latest-news-text h3 {
 
+  .latest-news-text h3 {
     margin-top: 10px;
   }
 
@@ -686,10 +681,10 @@ header {
   }
 
   .funding-option-center {
-    padding-left:  12px;
+    padding-left: 12px;
     padding-right: 12px;
-    margin-left:   12px;
-    margin-right:  12px;
+    margin-left: 12px;
+    margin-right: 12px;
     border-left: 1px solid #f42;
     border-right: 1px solid #f42;
   }
@@ -707,13 +702,12 @@ header {
   .discount-badge {
     display: block;
   }
-  
+
   .copyright {
     display: flex;
     flex-direction: row;
   }
 }
-
 
 /* ============================== Second Break Point =========================== */
 
@@ -728,17 +722,18 @@ header {
   }
 
   .title1 a {
-    background-image: linear-gradient(to top,rgba(0,0,0, 1), rgb(221, 66, 66, .5), rgb(221, 66, 66, .25));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(221, 66, 66, 0.5), rgb(221, 66, 66, 0.25));
   }
 
   .title-logo-div {
     display: block;
     margin-bottom: auto;
   }
+
   .title-logo-div img {
     width: 50%;
   }
-  
+
   .title-logo-div p {
     float: right;
     font-size: 1em;
@@ -763,10 +758,10 @@ header {
   }
 
   .funding-option-center {
-    padding-left:  12px;
+    padding-left: 12px;
     padding-right: 12px;
-    margin-left:   12px;
-    margin-right:  12px;
+    margin-left: 12px;
+    margin-right: 12px;
     border-left: 1px solid #f42;
     border-right: 1px solid #f42;
   }
