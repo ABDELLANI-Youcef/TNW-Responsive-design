@@ -22,11 +22,14 @@ a {
   color: black;
 }
 
+.flex {
+  display: flex;
+}
+
 /* ============================== Mobile Design =========================== */
 
 header {
   width: 100%;
-  display: flex;
   justify-content: flex-start;
 }
 
@@ -69,18 +72,15 @@ header {
 }
 
 .black-header-left {
-  display: flex;
   justify-content: space-around;
 }
 
 .black-header-left ul {
-  display: flex;
   list-style-type: none;
   padding-left: 18px;
 }
 
-.black-header-left ul li,
-.black-header-right ul li {
+.header-list-item {
   margin-right: 7px;
 }
 
@@ -94,19 +94,16 @@ header {
 }
 
 .black-header-right {
-  display: flex;
   justify-content: space-around;
   margin-right: 18px;
 }
 
 .black-header-right ul {
-  display: flex;
   list-style-type: none;
   padding-left: 0;
 }
 
 .white-header {
-  display: flex;
   background-color: white;
   color: #aaa;
   margin-top: 0;
@@ -120,9 +117,7 @@ header {
 }
 
 .white-header-left {
-  visibility: hidden;
   height: 100%;
-  display: flex;
   align-items: center;
 }
 
@@ -133,19 +128,13 @@ header {
   padding-left: 20px;
 }
 
-.white-header-left ul li {
-  margin-right: 7px;
-}
-
 .white-header-right {
-  display: flex;
   align-items: center;
   justify-content: flex-end;
   height: 100%;
 }
 
 .search-container {
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -318,7 +307,6 @@ header {
 /* ************************** Latest funding section ***************************** */
 
 .latest-funding-header {
-  display: flex;
   flex-direction: column;
   margin-left: var(--side-margin);
   margin-right: var(--side-margin);
@@ -329,7 +317,6 @@ header {
 }
 
 .latest-funding-options {
-  display: flex;
   flex-direction: column;
 }
 
@@ -461,11 +448,25 @@ header {
   overflow: hidden;
   padding-left: 20px;
   color: red;
+  font-size: 13px;
+}
+
+.article-middle h2 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.article-middle p {
+  margin-top: 0;
+  margin-bottom: 0px;
+  font-weight: 700;
 }
 
 .article-middle img {
-  width: 150px;
-  height: 130px;
+  width: 96px;
+  height: 96px;
   float: right;
   margin-top: 3px;
 }
@@ -478,6 +479,7 @@ header {
   padding-left: 20px;
   list-style: none;
   color: #777;
+  font-size: 13px;
 }
 
 .article-bottom li::before {
@@ -492,7 +494,6 @@ header {
 /* *********************************** Latest deals ******************************* */
 
 .latest-deals-header {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   margin-right: var(--side-margin);
@@ -542,10 +543,10 @@ header {
 .footer {
   color: #aaa;
   margin-top: 50px;
+  background-color: #131313;
 }
 
 .footer-links {
-  display: flex;
   justify-content: center;
   background-color: #131313;
   padding-top: 30px;
@@ -572,7 +573,6 @@ header {
 }
 
 .copyright {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -678,7 +678,6 @@ header {
   }
 
   .latest-funding-options {
-    display: flex;
     flex-direction: row;
   }
 
@@ -711,7 +710,6 @@ header {
   }
 
   .copyright {
-    display: flex;
     flex-direction: row;
   }
 }
@@ -764,7 +762,6 @@ header {
   }
 
   .latest-funding-options {
-    display: flex;
     flex-direction: row-reverse;
     align-items: center;
   }
