@@ -127,7 +127,7 @@ header {
 }
 
 .white-header-left ul {
-  display: flex;
+  display: none;
   list-style-type: none;
   align-items: center;
   padding-left: 20px;
@@ -619,6 +619,13 @@ header {
     visibility: visible;
   }
 
+  .white-header-left ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding-left: 20px;
+  }
+
   .header-logo {
     width: 106px;
     height: 82px;
@@ -737,6 +744,11 @@ header {
   .title-logo-div p {
     float: right;
     font-size: 1em;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .latest-news {
