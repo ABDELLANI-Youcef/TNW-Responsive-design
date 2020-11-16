@@ -1,0 +1,803 @@
+/* ============================== General Styles =========================== */
+
+:root {
+  --side-margin: 18px;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  background-color: #eee;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex {
+  display: flex;
+}
+
+/* ============================== Mobile Design =========================== */
+
+header {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.header-logo {
+  width: 114px;
+  height: 48px;
+  background-image: linear-gradient(-45deg, rgb(206, 87, 18) 20%, purple 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  z-index: 51;
+  visibility: visible;
+}
+
+.space-holder {
+  margin-top: 0;
+  height: 2px;
+}
+
+.header-logo img {
+  position: sticky;
+  top: 5px;
+  left: 10px;
+  height: 40px;
+  width: 80px;
+}
+
+.black-header {
+  background-color: black;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  color: #ddd;
+  margin-bottom: 0;
+  font-size: 13px;
+  height: 33px;
+  padding-left: 105px;
+  width: 100%;
+}
+
+.black-header-left {
+  justify-content: space-around;
+}
+
+.black-header-left ul {
+  list-style-type: none;
+  padding-left: 18px;
+}
+
+.header-list-item {
+  margin-right: 7px;
+}
+
+.black-header-left-new {
+  color: white;
+  font-size: 15px;
+}
+
+.black-header-left-last {
+  margin-right: 0;
+}
+
+.black-header-right {
+  justify-content: space-around;
+  margin-right: 18px;
+}
+
+.black-header-right ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.white-header {
+  background-color: white;
+  color: #aaa;
+  margin-top: 0;
+  font-size: 12px;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.white-header-left {
+  height: 100%;
+  align-items: center;
+}
+
+.white-header-left ul {
+  display: none;
+  list-style-type: none;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.white-header-right {
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.search-container {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 48px;
+  border-left: 1px solid #eee;
+}
+
+.reorder-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 48px;
+  border-left: 1px solid #eee;
+  color: coral;
+}
+
+/* ************************** Title section ***************************** */
+
+.titles {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 500px;
+  grid-gap: 8px;
+  padding: 8px;
+}
+
+.title1 {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Untitled-design-2020-07-29T185605.585-796x417.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title2 {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Untitled-design-2020-07-28T191306.193-796x417.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title3 {
+  background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/Untitled-design-2020-07-29T160841.851-796x417.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title2 a {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1));
+}
+
+.title3 a {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.1));
+}
+
+.lower-left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  color: #fff;
+}
+
+.lower-left h2 {
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+}
+
+.lower-left h1 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.lower-left h3 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.lower-left p {
+  font-size: 0.7em;
+  margin: 0;
+}
+
+.title-logo-div {
+  display: none;
+}
+
+/* ************************** Latest news section ***************************** */
+
+.section-heading {
+  color: #f42;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-left: var(--side-margin);
+}
+
+.section-heading:hover {
+  color: black;
+}
+
+.section-heading img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: -3.8px;
+}
+
+.latest-news {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  margin-left: var(--side-margin);
+  margin-right: var(--side-margin);
+}
+
+.latest-news-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest-news-image {
+  width: 75px;
+  height: 75px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.latest-news-text {
+  width: calc(100% - 85px);
+  font-size: 0.8em;
+}
+
+.latest-news-text h3 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.latest-news-div1 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/kodak-480x270.jpg");
+}
+
+.latest-news-div2 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/CES-2021-516x270.jpg");
+}
+
+.latest-news-div3 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/tencent-480x270.jpg");
+}
+
+.latest-news-div4 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/acquisition-blog-post-thisstartupannouncementdoesntexist-519x270.png");
+}
+
+.latest-news-div5 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/woman-drinking-coffee-while-working-with-laptop-4050289-540x270.jpg");
+}
+
+.latest-news-div6 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-512x270.jpg");
+}
+
+.latest-news-div7 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/1-9-516x270.jpg");
+}
+
+.latest-news-div8 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/header-image-photoshops-ipad-app-refine-edge-rotate-canvas-516x270.png");
+}
+
+/* ************************** Latest funding section ***************************** */
+
+.latest-funding-header {
+  flex-direction: column;
+  margin-left: var(--side-margin);
+  margin-right: var(--side-margin);
+}
+
+.latest-funding-header .section-heading {
+  margin-left: 0;
+}
+
+.latest-funding-options {
+  flex-direction: column;
+}
+
+.latest-funding-options a {
+  color: #f42;
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+.funding-div {
+  background-color: rgb(231, 218, 216);
+  padding-bottom: 10px;
+}
+
+.funding-div-head {
+  background-color: rgb(241, 190, 182);
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.funding-div-title {
+  background-color: #f42;
+  color: white;
+  padding-left: 85px;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.funding-enterprise-logo {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.funding-budget {
+  margin-left: 85px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.funding-type {
+  margin-left: 85px;
+  margin-top: 0;
+  color: #555;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.funding-last {
+  display: none;
+}
+
+.funding-info {
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 200;
+  color: #555;
+}
+
+.funding-info .fa {
+  color: black;
+  font-size: 15px;
+  margin-right: 6px;
+}
+
+.funding-div hr {
+  border-top: 1px solid rgb(241, 190, 182);
+  border-bottom: none;
+}
+
+.funding-platform {
+  color: #aaa;
+}
+
+/* ************************** Articles section ***************************** */
+
+.articles-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  margin: 50px var(--side-margin) 0 var(--side-margin);
+}
+
+.article-header .section-heading {
+  margin-left: 0;
+}
+
+.article-picture {
+  height: 70vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.picture1 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-512x270.jpg");
+}
+
+.picture2 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/header-image-photoshops-ipad-app-refine-edge-rotate-canvas-516x270.png");
+}
+
+.picture3 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/1-9-516x270.jpg");
+}
+
+.picture6 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/woman-drinking-coffee-while-working-with-laptop-4050289-540x270.jpg");
+}
+
+.picture7 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/kodak-480x270.jpg");
+}
+
+.picture8 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/CES-2021-516x270.jpg");
+}
+
+.picture9 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/acquisition-blog-post-thisstartupannouncementdoesntexist-519x270.png");
+}
+
+.article-middle {
+  background-color: rgb(231, 218, 216);
+  overflow: hidden;
+  padding-left: 20px;
+  color: red;
+  font-size: 13px;
+}
+
+.article-middle h2 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.article-middle p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.article-middle img {
+  width: 96px;
+  height: 96px;
+  float: right;
+  margin-top: 3px;
+}
+
+.article-bottom div {
+  border-bottom: 1px #aaa solid;
+}
+
+.article-bottom ul {
+  padding-left: 20px;
+  list-style: none;
+  color: #777;
+  font-size: 13px;
+}
+
+.article-bottom li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* *********************************** Latest deals ******************************* */
+
+.latest-deals-header {
+  justify-content: space-between;
+  align-items: center;
+  margin-right: var(--side-margin);
+}
+
+.deals-header-right {
+  color: #f42;
+  font-size: 16px;
+}
+
+.deals-header-right:hover {
+  color: black;
+}
+
+.discount-badge {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  right: 0;
+  top: 0;
+  position: absolute;
+  display: none;
+}
+
+.discount {
+  font-size: 12px;
+  font-weight: 700;
+  transform: rotate(45deg);
+  margin-bottom: 0;
+  margin-top: 25px;
+  margin-left: 11px;
+  text-transform: uppercase;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.promotion-price {
+  color: #555;
+}
+
+/* *********************************** Footer ******************************* */
+
+.footer {
+  color: #aaa;
+  margin-top: 50px;
+  background-color: #131313;
+}
+
+.footer-links {
+  justify-content: center;
+  background-color: #131313;
+  padding-top: 30px;
+  margin-bottom: 0;
+}
+
+.footer-links i {
+  margin: 0 10px 0 10px;
+  font-size: 1.2em;
+  border: 1px #333 solid;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.footer-links i:hover {
+  background-color: #000;
+}
+
+.footer-links h3 {
+  margin: 0 5px 20px 5px;
+  font-size: 0.7em;
+}
+
+.copyright {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.copyright p {
+  margin: 2px 5px 0 2px;
+  font-size: 0.8em;
+}
+
+.copyright img {
+  width: 40px;
+  height: 15px;
+  margin-bottom: -3px;
+}
+
+.copyright span {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+.wheelchair {
+  color: #fff;
+  position: fixed;
+  background-color: #146ff8;
+  padding: 4px 5px 4px 7px;
+  font-size: 1.5em;
+  right: 0;
+  bottom: 0;
+}
+
+/* ============================== First Break Point =========================== */
+
+@media screen and (min-width: 768px) {
+  .black-header {
+    display: flex;
+  }
+
+  .white-header-left {
+    visibility: visible;
+  }
+
+  .white-header-left ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .header-logo {
+    width: 106px;
+    height: 82px;
+    background-color: yellowgreen;
+    margin-top: -32px;
+  }
+
+  .reorder-container {
+    display: none;
+  }
+
+  .titles {
+    grid-template: 1fr 1fr / 2fr 1fr;
+  }
+
+  .title1 {
+    grid-area: 1 / 1 / 3 / 2;
+  }
+
+  .lower-left h1 {
+    font-size: 1.4em;
+  }
+
+  .title1 .lower-left h1 {
+    font-size: 2.5em;
+  }
+
+  .latest-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .latest-news-div {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .latest-news-image {
+    width: 100%;
+    height: 15vw;
+  }
+
+  .latest-news-text {
+    width: 100%;
+  }
+
+  .latest-news-text h3 {
+    margin-top: 10px;
+  }
+
+  .latest-funding-options {
+    flex-direction: row;
+  }
+
+  .latest-funding-options a {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+
+  .funding-option-center {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-left: 1px solid #f42;
+    border-right: 1px solid #f42;
+  }
+
+  .articles-section {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .article-picture {
+    height: 40vw;
+    padding: 20px;
+  }
+
+  .discount-badge {
+    display: block;
+  }
+
+  .copyright {
+    flex-direction: row;
+  }
+}
+
+/* ============================== Second Break Point =========================== */
+
+@media screen and (min-width: 1024px) {
+  .header-logo {
+    display: none;
+  }
+
+  .black-header {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .title1 a {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(221, 66, 66, 0.5), rgb(221, 66, 66, 0.25));
+  }
+
+  .title-logo-div {
+    display: block;
+    margin-bottom: auto;
+  }
+
+  .title-logo-div img {
+    width: 50%;
+  }
+
+  .title-logo-div p {
+    float: right;
+    font-size: 1em;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .latest-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .latest-funding-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .latest-funding-options {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .funding-option-center {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-left: 1px solid #f42;
+    border-right: 1px solid #f42;
+  }
+
+  .latest-funding-options a {
+    margin-bottom: 0;
+  }
+
+  .funding-last {
+    display: block;
+  }
+
+  .articles-section {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .article-picture {
+    height: 25vw;
+    padding: 20px;
+  }
+
+  .wheelchair {
+    border-radius: 50%;
+    padding: 4px 5px 4px 10px;
+    font-size: 2em;
+    right: 1vw;
+    bottom: 1vw;
+  }
+}
